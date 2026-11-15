@@ -1,0 +1,15 @@
+server:
+  port: ${PORT:8080}
+spring:
+  application:
+    name: java-agent
+  ai:
+    openai:
+      api-key: ${OPENAI_API_KEY:}
+      chat:
+        options:
+          model: ${OPENAI_MODEL:gpt-4.1-mini}
+agent:
+  database: ${AGENT_DATABASE:data/agent.db}
+  knowledge-path: ${AGENT_KNOWLEDGE_PATH:workspace/architecture-knowledge}
+  history-limit: 16

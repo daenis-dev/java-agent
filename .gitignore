@@ -1,0 +1,17 @@
+# Maven
+/target/
+
+# IntelliJ IDEA
+/.idea/
+*.iml
+
+# Runtime data
+/data/
+/workspace/
+
+# macOS
+.DS_Store
+
+# Environment variables and secrets
+.env
+.env.*

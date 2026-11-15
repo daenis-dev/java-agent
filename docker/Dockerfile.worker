@@ -1,0 +1,7 @@
+# Placeholder for phase 2: isolated code execution.
+# Do not build or launch untrusted repositories on the API host without sandbox controls.
+FROM eclipse-temurin:21-jdk
+RUN useradd --create-home --uid 10001 worker
+USER worker
+WORKDIR /home/worker
+CMD ["java", "-version"]
