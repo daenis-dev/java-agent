@@ -10,25 +10,23 @@ Java 21 / Maven / Spring Boot / Spring AI / SQLite. This version provides chat, 
 
 ## Setup
 
-1. Rename the supplied `gitignore` file to `.gitignore`.
-2. Remove the original archetype files `src/main/java/com/greenpalmsolutions/agents/App.java` and `src/test/java/com/greenpalmsolutions/agents/AppTest.java` if they exist.
-3. Create a **separate private GitHub repository** for architecture knowledge, under the same GitHub account as this application. Suggested name: `architecture-knowledge`.
-4. In that repository, create `authoritative/`, `interpretations/human/`, `interpretations/agent/` and `decisions/` with a README in each directory. Authoritative sources should contain attributed notes/links, not unauthorized copies of books. Human interpretations and decisions are human-controlled.
-5. Clone the knowledge repository into `workspace/architecture-knowledge`:
+1. Create a **separate private GitHub repository** for architecture knowledge, under the same GitHub account as this application. Suggested name: `architecture-knowledge`.
+2. In that repository, create `authoritative/`, `interpretations/human/`, `interpretations/agent/` and `decisions/` with a README in each directory. Authoritative sources should contain attributed notes/links, not unauthorized copies of books. Human interpretations and decisions are human-controlled.
+3. Clone the knowledge repository into `workspace/architecture-knowledge`:
 
    `git clone git@github.com:YOUR_ACCOUNT/architecture-knowledge.git workspace/architecture-knowledge`
 
-6. Export your API key (never commit it):
+4. Export your API key (never commit it):
 
    `export OPENAI_API_KEY='your-key'`
 
-7. Build and run:
+5. Build and run:
 
    `mvn clean test`
 
    `mvn spring-boot:run`
 
-8. Open http://localhost:8080.
+6. Open http://localhost:8080.
 
 ## Configuration
 
