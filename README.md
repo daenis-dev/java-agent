@@ -1,6 +1,6 @@
-# Engineering Agent — Conversational MVP
+# Engineering Agent - Conversational MVP
 
-Java 21 / Maven / Spring Boot / Spring AI / SQLite. This milestone provides chat, durable conversation history, knowledge retrieval from a separate Git checkout and independently generated agent interpretations. It does **not** yet implement autonomous code execution, GitHub webhooks, approvals or CI/CD.
+Java 21 / Maven / Spring Boot / Spring AI / SQLite. This version provides chat, durable conversation history, knowledge retrieval from a separate Git checkout and independently generated agent interpretations. It does **not** yet implement autonomous code execution, GitHub webhooks, approvals or CI/CD.
 
 ## Prerequisites
 
@@ -52,7 +52,3 @@ Java 21 / Maven / Spring Boot / Spring AI / SQLite. This milestone provides chat
 - `GET /api/conversations` — recent conversation IDs
 - `GET /api/conversations/{id}` — stored messages
 - `GET /api/knowledge/status` — knowledge checkout status
-
-## Next milestones
-
-Add explicit source provenance and citation validation, agent-interpretation revisions through Git-reviewed PRs, token/cost metering, tests with a mock model, then isolated Git/Maven execution and approvals.
